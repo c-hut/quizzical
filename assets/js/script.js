@@ -147,3 +147,27 @@ startQuizEl.addEventListener('click', function() {
     // Load question and answers
     init()
 })
+
+function userAnswersQuestion(clickEvent) {
+    /* begin with the event object; refer to the target (answer buttons); 
+    access the custom data attribute; specify the suffix of said attribute;
+    and convert assigned value to an integer
+    */
+    const selectedAnswer = parseInt(clickEvent.target.dataset.index);
+
+    /* compare the answer selected by the user with the 'correct' answer in the
+    questionAndAnswers array
+    */
+    if (selectedAnswer === questionsAndAnswers[questionIndex].correct) {
+        clickEvent.target.style.backgroundColor = 'green';
+        scoreCounter++
+        scoreCounterEl.innerText = scoreCounter;
+        // Prevent validation of further answers
+        preventFurtherAnswers()
+    } else {
+        clickEvent.target.style.backgroundColor = 'red';
+        // Prevent validation of further answers
+        preventFurtherAnswers()
+    }
+
+}
