@@ -70,3 +70,26 @@
         Go to Quiz
       </button>
     </div>
+
+    <!-- Quiz area containing questions, answers and running tally -->
+    <div class="quiz-container invisible">
+      <div id="question-container">
+        <span id="question-number">0</span>
+        <h3 id="question">Question</h3>
+        <ul id="answers">
+          <li class="answer"><button data-index="0" id="answer--1" >1</button></li>
+          <li class="answer"><button data-index="1" id="answer--2">2</button></li>
+          <li class="answer"><button data-index="2" id="answer--3">3</button></li>
+          <li class="answer"><button data-index="3" id="answer--4">4</button></li>
+        </ul>
+        <div id="tally-container">
+          <span id="tally-text"
+            >Correct answers:
+            <span id="running-tally">0</span></span
+          >
+        </div>
+        <div id="button-container">
+          <button data-type="forward" id="btn-forward">Next</button>
+        </div>
+      </div>
+    </div>
