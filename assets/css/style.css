@@ -80,3 +80,109 @@ header #logo {
     border-radius: 12px;
     box-shadow: 1px 1px 1px 1px #844D29;
 }
+
+/* Quiz Page */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(3, 0, 0, 0.5), rgba(210, 163, 55, 0.5), rgba(3, 0, 0, 0.5));
+    opacity: 0.9;
+    border-radius: 250px;
+    height: 450px;
+    width: 250px;
+    margin: auto;
+}
+
+#question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #030000;
+    height: 340px;
+    width: 200px;
+    opacity: 0.5;
+    border-radius: 110px;
+}
+
+#question-number {
+    padding-top: 5px;
+    color: #C28347;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#question {
+    color: #C28347;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Leckerli One', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+#answers {
+    color: #C28347;
+    font-weight: bold;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#answers button {
+    height: 20px;
+    width: 200px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #AA7039;
+    box-shadow: 1px 1px 2px 2px #502616;
+    color: #270802;
+    font-weight: bold;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.answer {
+    color: #844D29;
+}
+
+#tally-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#tally-text {
+    margin: 10px auto;
+    color: #C28347;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#running-tally {
+    color: #C28347;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+#btn-forward {
+    margin: 0 15px;
+    padding: 2px;
+    border-radius: 10px;
+    width: 70px;
+    background-color: #502616;
+    color: #AA7039;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 1px #AA7039;
+}
