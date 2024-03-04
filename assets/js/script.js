@@ -207,3 +207,21 @@ nextQuestionEl.addEventListener('click', function() {
         });
     }
 });
+
+// 'User Resets Game'
+resetGameEl.addEventListener('click', function() {
+    questionCounter = 1;
+    questionIndex = 0;
+    answerIndex =  0;
+    scoreCounter = 0;
+
+    answerBtnsEl.forEach(button => button.style.backgroundColor = '#AA7039');
+    
+    resultPageEl.classList.add('invisible');
+    homePageEl.classList.remove('invisible');
+
+    scoreCounterEl.innerText = scoreCounter;
+    questionNumberEl.innerText = `Question ${questionCounter}`;
+
+    init();
+});
