@@ -186,3 +186,59 @@ header #logo {
     font-weight: bold;
     box-shadow: 1px 1px 3px 1px #AA7039;
 }
+
+/* Result Page */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 500px;
+    width: 250px;
+    background-color: #660000;
+    opacity: 0.4;
+    border-radius: 100px;
+}
+
+.result-container video {
+   height: 150px;
+   margin: 10px 0;
+}
+
+.result-container h1 {
+    padding: 5px;
+    color: #C28347;
+    text-shadow: #E31837 1px 0 3px;
+    font-family: 'Leckerli One', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.score-container {
+    padding: 10px;
+    text-align: center;
+    color: #C28347;
+    text-shadow: #E31837 1px 0 3px;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#score-text {
+    margin: 10px;
+}
+
+.score-container button {
+    height: 30px;
+    width: 90px;
+    margin: 15px;
+    color: #C28347;
+    text-shadow: #E31837 1px 0px 3px;
+    background: linear-gradient(0deg, rgba(132, 77, 41, 0.5), rgba(194, 131, 71, 0.5), rgba(132, 77, 41, 0.5));
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px 1px #844D29;
+    font-weight: bold;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.invisible {
+    display: none;
+}
