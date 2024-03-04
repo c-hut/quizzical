@@ -366,4 +366,54 @@ header #logo {
         padding: 5px;
         font-size: 15px;
     }
+
+    /* Quiz Page */
+    .quiz-container { 
+        height: 700px;
+        border-radius: 300px;
+        margin: 50px auto;
+    }
+
+    #question-container {
+        height: 200%;
+        width: 95%;
+    }
+
+    #question {
+        font-size: 300%;
+    }
+
+    #question-number {
+        font-size: 150%;
+    }
+
+    .answer {
+        font-size: 150%;
+    }
+
+    #answers button {
+        height: 30px;
+        width: 600px;
+        margin: 10px 0;
+        font-size: 80%;
+    }
+
+    #tally-container {
+        padding-top: 20px;
+    }
+
+    #tally-text {
+        font-size: 140%;
+    }
+
+    #button-container {
+        padding: 1%;
+    }
+
+    #btn-forward {
+        width: 15%;
+        font-size: 120%;
+    }
+
+    
 }
