@@ -15,7 +15,8 @@ const nextQuestionEl = document.querySelector('#btn-forward');
 const resetGameEl = document.querySelector('#start-again');
 
 // Display Manipulation
-const homePageEl = document.querySelector('.welcome-text');
+const homePageVidEl = document.querySelector('.welcome-container');
+const homePageTxtEl = document.querySelector('.welcome-text');
 const quizPageEl = document.querySelector('.quiz-container');
 const resultPageEl = document.querySelector('.result-container')
 const questionNumberEl = document.querySelector('#question-number');
@@ -40,7 +41,7 @@ const questionsAndAnswers = [
         "correct": 1
     },
     {
-        "question": "Adventure of Sherlock Holmes' was written by which writer?",
+        "question": "Adventures of Sherlock Holmes' was written by which writer?",
         "answers": [
             "George Orwell", "Charles Dickens", "Arthur Conan Doyle", "Roald Dahl"
         ],
@@ -138,9 +139,17 @@ function init() {
     });
 }
 
+// Prevent further answers upon selection
+function preventFurtherAnswers() {
+    answerBtnsEl.forEach(button => {
+        button.removeEventListener('click', userAnswersQuestion);
+    })
+}
+
 // 'Go to Quiz'
 startQuizEl.addEventListener('click', function() {
-    homePageEl.classList.add('invisible');
+    homePageVidEl.classList.add('invisible');
+    homePageTxtEl.classList.add('invisible');
     quizPageEl.classList.remove('invisible');
     // Display question number
     questionNumberEl.innerText = `Question ${questionCounter}`;
@@ -218,7 +227,8 @@ resetGameEl.addEventListener('click', function() {
     answerBtnsEl.forEach(button => button.style.backgroundColor = '#AA7039');
     
     resultPageEl.classList.add('invisible');
-    homePageEl.classList.remove('invisible');
+    homePageVidEl.classList.remove('invisible');
+    homePageTxtEl.classList.remove('invisible');
 
     scoreCounterEl.innerText = scoreCounter;
     questionNumberEl.innerText = `Question ${questionCounter}`;
