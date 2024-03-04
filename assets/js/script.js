@@ -163,13 +163,15 @@ answerBtnsEl.forEach(button => {
 });
 
 function userAnswersQuestion(clickEvent) {
-    /* begin with the event object; refer to the target (answer buttons); 
+    // Decision made not to highlight correct answer in case the user wants to play again
+
+    /* Begin with the event object; refer to the target (answer buttons); 
     access the custom data attribute; specify the suffix of said attribute;
     and convert assigned value to an integer
     */
     const selectedAnswer = parseInt(clickEvent.target.dataset.index);
 
-    /* compare the answer selected by the user with the 'correct' answer in the
+    /* Compare the answer selected by the user with the 'correct' answer in the
     questionAndAnswers array
     */
     if (selectedAnswer === questionsAndAnswers[questionIndex].correct) {
