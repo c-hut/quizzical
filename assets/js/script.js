@@ -121,6 +121,23 @@ function displayAnswers() {
 }
 */
 
+// Initial conditions
+function init() {
+    // Display question number
+    questionNumberEl.innerText = `Question ${questionCounter}`;
+    // Display question
+    questionEl.innerText = questionsAndAnswers[questionIndex].question;
+    // Display answers
+    answer_1El.innerText = questionsAndAnswers[answerIndex].answers[0];
+    answer_2El.innerText = questionsAndAnswers[answerIndex].answers[1];
+    answer_3El.innerText = questionsAndAnswers[answerIndex].answers[2];
+    answer_4El.innerText = questionsAndAnswers[answerIndex].answers[3];
+
+    answerBtnsEl.forEach(button => {
+        button.addEventListener('click', userAnswersQuestion);
+    });
+}
+
 // 'Go to Quiz'
 startQuizEl.addEventListener('click', function() {
     homePageEl.classList.add('invisible');
