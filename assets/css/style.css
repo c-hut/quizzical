@@ -443,3 +443,37 @@ header #logo {
         font-size: 20px;
      }
 }
+
+@media only screen and (min-width: 2560px) {
+    /* Home Page */
+    main {
+        margin-top: 0.5%;
+    }
+
+    #homepage-background {
+        height: 700px;
+        width: 100%;
+    }
+    
+    .welcome-text h1 {
+        font-size: 150px;
+        margin-top: 200px;
+    }
+
+    .welcome-text h3 {
+        height: 90px;
+        width: 800px;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        border-radius: 100px;
+        border-width: 10px;
+    }
+
+    #btn-go-to-quiz {
+        width: 8%;
+        border-radius: 100px;
+        border-width: 5px;
+        font-size: 180%;
+    }
+}
