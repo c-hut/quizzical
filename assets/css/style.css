@@ -242,3 +242,26 @@ header #logo {
 .invisible {
     display: none;
 }
+
+@media only screen and (min-width: 768px) {
+    /* Home Page */
+    main {
+        margin-top: 5%;
+    }
+
+    #homepage-background {
+        height: 100%;
+    }
+    
+    .welcome-text h1 {
+        font-size: 300%;
+    }
+
+    .welcome-text h3 {
+        height: 80px;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    
+}
