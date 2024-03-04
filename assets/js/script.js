@@ -103,3 +103,20 @@ const questionsAndAnswers = [
         "correct": 1
     }
 ];
+
+// Refactored code
+
+/*
+---> Display question (added to init() function)
+function displayQuestion(questionIndex) {
+    questionEl.innerText = questionsAndAnswers[questionIndex].question;
+}
+
+---> Display answers (added to init() function)
+function displayAnswers() {
+    answer_1El.innerText = questionsAndAnswers[answerIndex].answers[0];
+    answer_2El.innerText = questionsAndAnswers[answerIndex].answers[1];
+    answer_3El.innerText = questionsAndAnswers[answerIndex].answers[2];
+    answer_4El.innerText = questionsAndAnswers[answerIndex].answers[3];
+}
+*/
