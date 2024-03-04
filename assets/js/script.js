@@ -148,6 +148,11 @@ startQuizEl.addEventListener('click', function() {
     init()
 })
 
+// Add event listener for 'userAnswersQuestion' function: iterate over answer buttons and call function
+answerBtnsEl.forEach(button => {
+    button.addEventListener('click', userAnswersQuestion);
+});
+
 function userAnswersQuestion(clickEvent) {
     /* begin with the event object; refer to the target (answer buttons); 
     access the custom data attribute; specify the suffix of said attribute;
