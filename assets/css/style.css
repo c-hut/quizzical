@@ -308,4 +308,31 @@ header #logo {
         margin: 0 50px;
         width: 20%;
     }
+
+    /* Result Page */
+    .result-container {
+        height: 600px;
+        width: 600px;
+    }
+
+    .result-container video {
+        height: 150px;
+        background: black;
+        margin: 10px 0;
+     }
+     
+     .result-container h1 {
+        font-size: 50px;
+     }
+
+     #score-text {
+        font-size: 30px;
+     }
+
+     .score-container button {
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+        text-shadow: #E31837 1px 0 3px;
+     }
 }
