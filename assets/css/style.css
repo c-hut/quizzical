@@ -35,7 +35,6 @@ header #logo {
 .welcome-text {
     display: flex;
     flex-direction: column;
-    height: 170px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -90,9 +89,9 @@ header #logo {
     background: linear-gradient(0deg, rgba(3, 0, 0, 0.5), rgba(210, 163, 55, 0.5), rgba(3, 0, 0, 0.5));
     opacity: 0.9;
     border-radius: 250px;
-    height: 450px;
+    height: 500px;
     width: 250px;
-    margin: auto;
+    margin: 40px auto;
 }
 
 #question-container {
@@ -101,7 +100,7 @@ header #logo {
     justify-content: center;
     padding: 20px;
     background-color: #030000;
-    height: 340px;
+    height: 400px;
     width: 200px;
     opacity: 0.5;
     border-radius: 110px;
@@ -112,16 +111,16 @@ header #logo {
     color: #C28347;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #question {
     color: #C28347;
     text-align: center;
     font-weight: bold;
-    font-size: 23px;
-    font-family: 'Leckerli One', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
 }
 
@@ -129,8 +128,6 @@ header #logo {
     color: #C28347;
     font-weight: bold;
     list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #answers button {
@@ -159,14 +156,14 @@ header #logo {
     color: #C28347;
     text-align: center;
     font-weight: bold;
-    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #running-tally {
     color: #C28347;
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #button-container {
@@ -193,7 +190,7 @@ header #logo {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    height: 500px;
+    height: 550px;
     width: 250px;
     background-color: #660000;
     opacity: 0.4;
