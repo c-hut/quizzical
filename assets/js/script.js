@@ -24,3 +24,9 @@ const answerBtnsEl = [answer_1El, answer_2El, answer_3El, answer_4El];
 const scoreCounterEl = document.querySelector('#running-tally');
 const finalScoreEl = document.querySelector('#final-score');
 const scoreMessageEl =  document.querySelector('#score-message');
+
+// Re-assignable variables
+let questionCounter = 1;
+let questionIndex = 0;
+let answerIndex = 0;
+let scoreCounter = 0;
