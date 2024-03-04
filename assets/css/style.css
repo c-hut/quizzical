@@ -415,5 +415,31 @@ header #logo {
         font-size: 120%;
     }
 
-    
+    /* Result Page */
+    .result-container {
+        height: 720px;
+        width: 1000px;
+    }
+
+    .result-container video {
+        height: 200px;
+        background: black;
+        margin: 10px 0;
+     }
+     
+     .result-container h1 {
+        font-size: 80px;
+     }
+
+     .score-container button {
+        text-shadow: #E31837 1px 0 3px;
+     }
+
+     #score-text {
+        font-size: 40px;
+     }
+
+     #score-message {
+        font-size: 20px;
+     }
 }
