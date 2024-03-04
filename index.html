@@ -33,7 +33,6 @@
           <img src="assets/favicon/favicon-32x32.png" alt="Quiz Logo" />
         </h1>
       </header>
-  </body>
 
   <!-- Homepage -->
   <main>
@@ -93,3 +92,38 @@
         </div>
       </div>
     </div>
+
+    <!-- Result area containing the final score and a message which depends on the score -->
+    <div class="result-container invisible">
+      <h1>Quiz completed!</h1>
+      <video
+        id="result-background"
+        height="100%"
+        width="100%"
+        autoplay
+        loop
+        muted
+      >
+        <source
+          type="video/mp4"
+          href="https://www.vecteezy.com/video/8808619-star-particle-effect"
+          alt="Star particle effect"
+          src="./assets/videos/result-background.mp4"
+        />
+      </video>
+      <div class="score-container">
+        <span id="score-text"
+          >Your final score is:
+          <span id="final-score">0</span></span
+        >
+        <br>
+        <br>
+        <p id="score-message">[Depends on score]</p>
+        <button type="reset" id="start-again">Start Again</button>
+      </div>
+    </div>
+  </main>
+  <!-- JavaScript File Link -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
