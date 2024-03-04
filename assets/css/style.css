@@ -336,3 +336,34 @@ header #logo {
         text-shadow: #E31837 1px 0 3px;
      }
 }
+
+@media only screen and (min-width: 1440px) {
+    /* Home Page */
+    main {
+        margin-top: 0.1%;
+    }
+
+    #homepage-background {
+        height: 400px;
+        width: 100%;
+    }
+
+    .welcome-text h1 {
+        font-size: 350%;
+    }
+
+    .welcome-text h3 {
+        height: 100px;
+        width: 350px;
+        margin-bottom: 1%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #btn-go-to-quiz {
+        height: 80px;
+        width: 100px;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
