@@ -30,3 +30,76 @@ let questionCounter = 1;
 let questionIndex = 0;
 let answerIndex = 0;
 let scoreCounter = 0;
+
+const questionsAndAnswers = [
+    {
+        "question": "Which planet is the hottest in the solar system?",
+        "answers": [
+            "Jupiter", "Venus", "Saturn", "Pluto"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "Adventure of Sherlock Holmes' was written by which writer?",
+        "answers": [
+            "George Orwell", "Charles Dickens", "Arthur Conan Doyle", "Roald Dahl"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "What was the first toy to be advertised on television?",
+        "answers": [
+            "Mr Potato Head", "Lego", "Barbie", "Teenage Mutant Ninja Turtles"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "What is the name for a group of crows?",
+        "answers": [
+            "A Cauldron of Crows", "A Fluther of Crows", "A Murder of Crows", "A Conspiracy of Crows"
+        ],
+        "correct": 2
+    },
+    {
+        "question": "How many ribs are in a human body?",
+        "answers": [
+            "Twenty-four", "Thirty-two", "Twenty-eight", "Twenty-six",
+        ],
+        "correct": 0
+    },
+    {
+        "question": "How many eyes do bees have?",
+        "answers": [
+            "Seven", "Two", "Twelve", "Five",
+        ],
+        "correct": 3
+    },
+    {
+        "question": "What element does the chemical symbol 'Au' stand for?",
+        "answers": [
+            "Antimony", "Europium", "Gold", "Zirconium",
+        ],
+        "correct": 2
+    },
+    {
+        "question": "Who invented scissors?",
+        "answers": [
+            "Thales of Miletus", "John Charnley", "Leonardo da Vinci", "Tim Berners-Lee",
+        ],
+        "correct": 2
+    },
+    {
+        "question": "In Greek mythology, who was known as the messenger of the gods?",
+        "answers": [
+            "Ares", "Hades", "Zeus", "Hermes",
+        ],
+        "correct": 3
+    },
+    {
+        "question": "What does DNA stand for?",
+        "answers": [
+            "Dinitrobenzenes Neohexane Azodicarbonamide", "Deoxyribonucleic Acid", "Dibenzyldichlorosilane Naphthylurea Acid", "Deuterium Nitroxylenes Allylamine",
+        ],
+        "correct": 1
+    }
+];
