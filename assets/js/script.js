@@ -120,3 +120,13 @@ function displayAnswers() {
     answer_4El.innerText = questionsAndAnswers[answerIndex].answers[3];
 }
 */
+
+// 'Go to Quiz'
+startQuizEl.addEventListener('click', function() {
+    homePageEl.classList.add('invisible');
+    quizPageEl.classList.remove('invisible');
+    // Display question number
+    questionNumberEl.innerText = `Question ${questionCounter}`;
+    // Load question and answers
+    init()
+})
