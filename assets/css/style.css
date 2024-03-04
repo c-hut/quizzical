@@ -532,5 +532,47 @@ header #logo {
         font-size: 180%;
         box-shadow: 1px 1px 4px 2px #AA7039;
     }
-    /* Last commit was for the Quiz Page, not the Result Page */
+    
+    /* Result Page */
+    .result-container {
+        height: 1480px;
+        width: 2000px;
+        border-radius: 300px;
+    }
+
+    .result-container video {
+        height: 400px;
+        background: black;
+        margin: 20px 0;
+     }
+     
+     .result-container h1 {
+        font-size: 120px;
+        margin-bottom: 10px;
+     }
+
+     .score-container h1 {
+        text-shadow: #E31837 5px 10px 20px;
+     }
+
+     .score-container span {
+        text-shadow: #E31837 5px 0px 20px;
+     }
+
+     #score-text {
+        font-size: 70px;
+     }
+
+     #score-message {
+        font-size: 40px;
+     }
+
+     .score-container button {
+        height: 80px;
+        width: 180px;
+        margin: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: #E31837 5px 0px 20px;
+     }
 }
