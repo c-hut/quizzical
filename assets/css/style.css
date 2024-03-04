@@ -263,5 +263,49 @@ header #logo {
         font-size: 18px;
     }
 
-    
+    /* Quiz Questions */
+    .quiz-container {
+        height: 550px;
+        width: 80%;
+        margin: 20px auto 50px;
+    }
+
+    #question-container {
+        height: 80%;
+        width: 90%;
+        border-radius: 45%;
+    }
+
+    #question {
+        font-size: 180%;
+        margin: 0 40px;
+    }
+
+    .answer {
+        font-size: 110%;
+    }
+
+    #answers button {
+        height: 20px;
+        width: 400px;
+        margin: 10px 0;
+        font-size: 80%;
+    }
+
+    #tally-container {
+        padding: 10px;
+    }
+
+    #tally-text {
+        font-size: 120%;
+    }
+
+    #button-container {
+        padding: 5%;
+    }
+
+    #btn-forward {
+        margin: 0 50px;
+        width: 20%;
+    }
 }
