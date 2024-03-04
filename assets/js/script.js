@@ -1,3 +1,5 @@
+// N.B. Please ignore last commit message - it was committed in error
+
 // Retrieve elements from the DOM
 
 // Buttons
