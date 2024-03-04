@@ -476,4 +476,60 @@ header #logo {
         border-width: 5px;
         font-size: 180%;
     }
+
+    /* Quiz Page */
+
+    .quiz-container {
+        height: 1400px;
+        width: 90%;
+        border-radius: 450px;
+        margin: 50px auto;
+    }
+
+    #question-container {
+        height: 120%;
+        border-radius: 550px;
+    }
+
+    #question {
+        font-size: 450%;
+    }
+
+    #question-number {
+        font-size: 250%;
+    }
+
+    .answer {
+        font-size: 250%;
+    }
+
+    #answers button {
+        height: 45px;
+        width: 900px;
+        margin: 10px 0;
+        font-size: 80%;
+        box-shadow: 1px 1px 3px 3px #502616;
+    }
+
+    #tally-container {
+        padding-top: 20px;
+    }
+
+    #tally-text {
+        font-size: 225%;
+    }
+    
+    #running-tally {
+        font-size: 100%;
+    }
+
+    #button-container {
+        padding: 1%;
+    }
+
+    #btn-backward, #btn-forward {
+        width: 10%;
+        font-size: 180%;
+        box-shadow: 1px 1px 4px 2px #AA7039;
+    }
 }
