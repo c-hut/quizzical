@@ -176,3 +176,34 @@ function userAnswersQuestion(clickEvent) {
     }
 
 }
+
+// 'User Clicks Next'
+nextQuestionEl.addEventListener('click', function() {
+    //Increment question
+    questionIndex++;
+    // Increment indices
+    answerIndex++;
+
+    if(questionCounter === 10) {
+        finalScoreEl.innerText = scoreCounter;
+
+        quizPageEl.classList.add('invisible');
+        resultPageEl.classList.remove('invisible');
+        if(scoreCounter >= 8) {
+            scoreMessageEl.innerText = `Congratulations! You answered enough questions correctly... you win!`;
+        } else {
+            scoreMessageEl.innerText = `Awww! You didn't answer enough questions correctly... better luck next time!`;
+        }
+    } else {
+        // Increment question number
+        questionCounter++;
+        // Displaying the question number
+        questionNumberEl.innerText = `Question ${questionCounter}`;
+        // Display next question and answers
+        init();
+         // Reset answer button colours
+        answerBtnsEl.forEach(button => {
+            button.style.backgroundColor = '';
+        });
+    }
+});
