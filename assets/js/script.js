@@ -20,7 +20,9 @@ const resetGameEl = document.querySelector('#start-again');
 const homePageVidEl = document.querySelector('.welcome-container');
 const homePageTxtEl = document.querySelector('.welcome-text');
 const quizPageEl = document.querySelector('.quiz-container');
-const resultPageEl = document.querySelector('.result-container')
+const resultPageEl = document.querySelector('.result-container');
+const winnerVideo = document.querySelector('.winner');
+const loserVideo = document.querySelector('.loser');
 const questionNumberEl = document.querySelector('#question-number');
 const questionEl = document.querySelector('#question');
 const answerBtnsEl = [answer_1El, answer_2El, answer_3El, answer_4El];
@@ -155,8 +157,6 @@ startQuizEl.addEventListener('click', function() {
     homePageVidEl.classList.add('invisible');
     homePageTxtEl.classList.add('invisible');
     quizPageEl.classList.remove('invisible');
-    // Display question number
-    questionNumberEl.innerText = `Question ${questionCounter}`;
     // Load question and answers
     init()
 })
@@ -203,18 +203,24 @@ nextQuestionEl.addEventListener('click', function() {
     answerIndex++;
 
     if(questionCounter === 10) {
-        // Display the final score
-        finalScoreEl.innerText = scoreCounter;
         // Manipulate 'invisible' class
         quizPageEl.classList.add('invisible');
         resultPageEl.classList.remove('invisible');
+        // Display the final score
+        finalScoreEl.innerText = scoreCounter;
         if(scoreCounter >= 8) {
             // Display congratulatory message
-            scoreMessageEl.innerText = `Congratulations! You answered enough questions correctly... you win!`;
+            scoreMessageEl.innerText = `Congratulations, you win!`;
         } else {
             // Display commiseration message
-            scoreMessageEl.innerText = `Awww! You didn't answer enough questions correctly... better luck next time!`;
+            scoreMessageEl.innerText = `Better luck next time!`;
+            // Display loser video and hide winner video
         }
+
+        // Toggle visibility of winner and loser videos based on the user score
+        winnerVideo.classList.toggle('invisible', scoreCounter < 8);
+        loserVideo.classList.toggle('invisible', scoreCounter >= 8);
+
     } else {
         // Increment question number
         questionCounter++;
@@ -233,9 +239,9 @@ nextQuestionEl.addEventListener('click', function() {
 resetGameEl.addEventListener('click', function() {
     // Reset the values
     questionCounter = 1;
+    scoreCounter = 0;
     questionIndex = 0;
     answerIndex =  0;
-    scoreCounter = 0;
     // Restore the button colour for each button, respectively
     answerBtnsEl.forEach(button => button.style.backgroundColor = '#AA7039');
     // Manipulate 'invisible' class

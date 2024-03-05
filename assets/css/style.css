@@ -14,11 +14,9 @@ body {
     max-width: 100%;
 }
 
-/* Homepage */
 main {
     display: flex;
     flex-direction: column;
-    margin: 40% auto;
 }
 
 header #logo {
@@ -32,6 +30,10 @@ header #logo {
     width: 100%;
 }
 
+.welcome-container {
+    margin-top: 50px;
+}
+
 .welcome-text {
     display: flex;
     flex-direction: column;
@@ -41,14 +43,11 @@ header #logo {
 
 .welcome-text h1 {
     padding: 5px;
-    margin-top: 10px;
-    color: linear-gradient(0deg, rgba(240,224,188,1) 19%, rgba(210,175,123,1) 66%);
-    /* Check style to see if it looks right */
-    text-shadow: #C28347 1px 0 3px;
+    margin: 5px;
+    text-shadow: #C28347 0px 0 3px;
     text-align: center;
     font-size: 45px;
     font-family: 'Leckerli One', Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: light;
 }
 
 .welcome-text h3 {
@@ -253,16 +252,12 @@ header #logo {
 
 @media only screen and (min-width: 768px) {
     /* Home Page */
-    main {
-        margin-top: 5%;
-    }
-
     #homepage-background {
         height: 100%;
     }
     
     .welcome-text h1 {
-        font-size: 300%;
+        font-size: 400%;
     }
 
     .welcome-text h3 {
@@ -348,17 +343,18 @@ header #logo {
 
 @media only screen and (min-width: 1440px) {
     /* Home Page */
-    main {
-        margin-top: 0.1%;
-    }
-
     #homepage-background {
         height: 400px;
         width: 100%;
     }
 
+    .welcome-container {
+        margin-top: 200px;
+    }    
+
     .welcome-text h1 {
-        font-size: 350%;
+        font-size: 500%;
+        text-shadow: #C28347 0px 0 10px;
     }
 
     .welcome-text h3 {
@@ -412,6 +408,10 @@ header #logo {
         font-size: 170%;
     }
 
+    #running-tally {
+        font-size: 25px;
+    }
+
     #button-container {
         padding: 1%;
     }
@@ -439,6 +439,8 @@ header #logo {
 
      .score-container button {
         text-shadow: #E31837 1px 0 3px;
+        width: 130px;
+        font-size: 20px;
      }
 
      #score-text {
@@ -446,16 +448,13 @@ header #logo {
      }
 
      #score-message {
-        font-size: 20px;
+        font-size: 22px;
+        margin: 10px 350px;
      }
 }
 
 @media only screen and (min-width: 2560px) {
     /* Home Page */
-    main {
-        margin-top: 0.5%;
-    }
-
     #homepage-background {
         height: 700px;
         width: 100%;
@@ -463,6 +462,7 @@ header #logo {
     
     .welcome-text h1 {
         font-size: 150px;
+        text-shadow: #C28347 0px 0 20px;
     }
 
     .welcome-text h3 {
@@ -539,7 +539,7 @@ header #logo {
 
     /* Result Page */
     .result-container {
-        height: 1480px;
+        height: 1550px;
         width: 2000px;
         border-radius: 300px;
     }
@@ -570,11 +570,10 @@ header #logo {
      #score-message {
         font-size: 40px;
         font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
-        background-color: #9b111e;
         border-radius: 1000px;
         border-style: dashed;
         padding: 30px;
-        margin: 20px 200px;
+        margin: 20px 700px;
      }
 
      .score-container button {
