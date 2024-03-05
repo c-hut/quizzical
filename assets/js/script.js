@@ -34,6 +34,7 @@ let questionIndex = 0;
 let answerIndex = 0;
 let scoreCounter = 0;
 
+// Idea for 'Querstion and Answers' array came from my mentor, Spencer Barriball
 const questionsAndAnswers = [
     {
         "question": "Which planet is the hottest in the solar system?",
@@ -135,7 +136,7 @@ function init() {
     answer_2El.innerText = questionsAndAnswers[answerIndex].answers[1];
     answer_3El.innerText = questionsAndAnswers[answerIndex].answers[2];
     answer_4El.innerText = questionsAndAnswers[answerIndex].answers[3];
-
+    // Iterate over answers, wait for a click and execute the 'User Answers Question' function
     answerBtnsEl.forEach(button => {
         button.addEventListener('click', userAnswersQuestion);
     });
@@ -150,6 +151,7 @@ function preventFurtherAnswers() {
 
 // 'Go to Quiz'
 startQuizEl.addEventListener('click', function() {
+    // Manipulate 'invisible' class
     homePageVidEl.classList.add('invisible');
     homePageTxtEl.classList.add('invisible');
     quizPageEl.classList.remove('invisible');
@@ -177,8 +179,11 @@ function userAnswersQuestion(clickEvent) {
     questionAndAnswers array
     */
     if (selectedAnswer === questionsAndAnswers[questionIndex].correct) {
+        // Change the background colour of the button to green
         clickEvent.target.style.backgroundColor = 'green';
+        // Increment the score count by 1
         scoreCounter++
+        // Display the updated score
         scoreCounterEl.innerText = scoreCounter;
         // Prevent validation of further answers
         preventFurtherAnswers()
@@ -192,19 +197,22 @@ function userAnswersQuestion(clickEvent) {
 
 // 'User Clicks Next'
 nextQuestionEl.addEventListener('click', function() {
-    //Increment question
+    //Increment question by 1
     questionIndex++;
-    // Increment indices
+    // Increment indices by 1
     answerIndex++;
 
     if(questionCounter === 10) {
+        // Display the final score
         finalScoreEl.innerText = scoreCounter;
-
+        // Manipulate 'invisible' class
         quizPageEl.classList.add('invisible');
         resultPageEl.classList.remove('invisible');
         if(scoreCounter >= 8) {
+            // Display congratulatory message
             scoreMessageEl.innerText = `Congratulations! You answered enough questions correctly... you win!`;
         } else {
+            // Display commiseration message
             scoreMessageEl.innerText = `Awww! You didn't answer enough questions correctly... better luck next time!`;
         }
     } else {
@@ -214,7 +222,7 @@ nextQuestionEl.addEventListener('click', function() {
         questionNumberEl.innerText = `Question ${questionCounter}`;
         // Display next question and answers
         init();
-         // Reset answer button colours
+         // Iterate over the answer button and update their colour, respectively
         answerBtnsEl.forEach(button => {
             button.style.backgroundColor = '';
         });
@@ -223,19 +231,20 @@ nextQuestionEl.addEventListener('click', function() {
 
 // 'User Resets Game'
 resetGameEl.addEventListener('click', function() {
+    // Reset the values
     questionCounter = 1;
     questionIndex = 0;
     answerIndex =  0;
     scoreCounter = 0;
-
+    // Restore the button colour for each button, respectively
     answerBtnsEl.forEach(button => button.style.backgroundColor = '#AA7039');
-    
+    // Manipulate 'invisible' class
     resultPageEl.classList.add('invisible');
     homePageVidEl.classList.remove('invisible');
     homePageTxtEl.classList.remove('invisible');
-
+    // Reset the score and question counters
     scoreCounterEl.innerText = scoreCounter;
     questionNumberEl.innerText = `Question ${questionCounter}`;
-
+    // Call the 'init' function
     init();
 });
