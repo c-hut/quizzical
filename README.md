@@ -2,7 +2,7 @@
 
 Quizzical is a simple, straightforward quiz game for anyone seeking a challenge. It's easy on the eye but not so easy on the mind, and its diverse range of questions is sure to leave its users guessing. From acclaimed novels to cherished childhood toys to Greek mythology, there's something for everyone.
 
-![Website screenshots](assets/images/website-screenshot.png)
+![Website screenshots](assets/css/images/website-screenshot.png)
 
 ## User Stories
 
@@ -22,34 +22,34 @@ For anyone looking for light entertainment, Quizzical can adequately serve their
     - Upon arrival to the first page, would-be players are met with lazily swinging lightbulbs and an accordingly composed theme. Ultimately, it was designed with tranquility in mind, thus making it easy on the eyes and gentle on the mind.
 
     #### Small Version
-    ![Landing Page Screenshot (small)](assets/images/home-page-small.png)
+    ![Landing Page Screenshot (small)](assets/css/images/home-page-small.png)
     
     #### Large Version
-    ![Landing Page Screenshot (large)](assets/images/home-page-large.png)
+    ![Landing Page Screenshot (large)](assets/css/images/home-page-large.png)
 
 - Quiz Page
     - After clicking the 'Go to Quiz' button, users will land on the second page - this is where the quiz takes place. Its simple design has been composed as such to avoid unnecesary distractions and to thereby reduce cognitive load. If a correct answer is registered, it will be highlighted in green, and the score will be incremented by 1. If an answer is incorrect, it will be highlighted in red. When the 'Next' button is clicked, the question number will be incremented by 1, and a new question will appear. 
 
     #### Small Version
-    ![Quiz Page Screenshot (small)](assets/images/quiz-page-small.png)
+    ![Quiz Page Screenshot (small)](assets/css/images/quiz-page-small.png)
     
     #### Large Version
-    ![Quiz Page Screenshot (large)](assets/images/quiz-page-large.png)
+    ![Quiz Page Screenshot (large)](assets/css/images/quiz-page-large.png)
 
 - Result Page
     - On the third and final page, users are informed that the quiz has been completed and their final score is displayed. If they scored 8 points or more, a congratulatory message is displayed. On the other hand, if they lose, a commiseration message is displayed. In the event that they would like to reset the game, they can click the 'Start Again' button; doing so will return them to the landing page.
 
     #### Small Version - WIN
-    ![Result Page Screenshot (small)](assets/images/result-page-win-small.png)
+    ![Result Page Screenshot (small)](assets/css/images/result-page-win-small.png)
     
     #### Large Version - WIN
-    ![Result Page Screenshot (large)](assets/images/result-page-win-large.png)
+    ![Result Page Screenshot (large)](assets/css/images/result-page-win-large.png)
 
     #### Small Version - LOSE
-    ![Result Page Screenshot (small)](assets/images/result-page-lose-small.png)
+    ![Result Page Screenshot (small)](assets/css/images/result-page-lose-small.png)
     
     #### Large Version - LOSE
-    ![Result Page Screenshot (large)](assets/images/result-page-lose-large.png)
+    ![Result Page Screenshot (large)](assets/css/images/result-page-lose-large.png)
 
 ### Prospective Features (TBD)
 
@@ -64,7 +64,7 @@ Beginning on the first page, the 'Go to Quiz' button must be clicked in order fo
 
 Prior to writing the quiz script, the below flowchart was produced in order to ensure clear and precise logic.
 
-![Website screenshots](assets/images/quiz-flow.png)
+![Website screenshots](assets/css/images/quiz-flow.png)
 
 ## Development Challenges
 
@@ -104,9 +104,9 @@ N.B. As difficult as it's been to wrap my head around JavaScript, I've thoroughl
 
     #### Positioning Issue
 
-    ![Landing Page Screenshot [1])](assets/images/home-positioning-issue.png)
-    ![Quiz Page Screenshot [1])](assets/images/quiz-positioning-issue.png)
-    ![Result Page Screenshot [1])](assets/images/result-positioning-issue.png)
+    ![Landing Page Screenshot [1])](assets/css/images/home-positioning-issue.png)
+    ![Quiz Page Screenshot [1])](assets/css/images/quiz-positioning-issue.png)
+    ![Result Page Screenshot [1])](assets/css/images/result-positioning-issue.png)
 
     ### Contrast Issue
 
@@ -120,21 +120,21 @@ N.B. As difficult as it's been to wrap my head around JavaScript, I've thoroughl
 
     #### Content Sizing Issue
 
-    ![Quiz Page Screenshot [2])](assets/images/quiz-sizing-issue.png)
+    ![Quiz Page Screenshot [2])](assets/css/images/quiz-sizing-issue.png)
 
 - ### Result Page
 
     - While viewing the result page, I recognised a need to change the animation on the last page according to the final score. Previously, a 'star' animation would be displayed indiscriminately (see below).
 
-    ![Result Page Screenshot [2])](assets/images/result-page-small.png)
-    ![Result Page Screenshot [3])](assets/images/result-page-large.png)
+    ![Result Page Screenshot [2])](assets/css/images/result-page-small.png)
+    ![Result Page Screenshot [3])](assets/css/images/result-page-large.png)
 
     After adjusting the HTML and JavaScript code, respectively, the 'star' animation will be displayed if a user wins, and a 'you lose' animation will be displayed if they lose. I decided to make this change as a means of further differentiating between the two possible outcomes of the quiz.
 
-    ![Result Page Screenshot [4])](assets/images/result-page-win-small.png)
-    ![Result Page Screenshot [5])](assets/images/result-page-win-large.png)
-    ![Result Page Screenshot [6])](assets/images/result-page-lose-small.png)
-    ![Result Page Screenshot [7])](assets/images/result-page-lose-large.png)
+    ![Result Page Screenshot [4])](assets/css/images/result-page-win-small.png)
+    ![Result Page Screenshot [5])](assets/css/images/result-page-win-large.png)
+    ![Result Page Screenshot [6])](assets/css/images/result-page-lose-small.png)
+    ![Result Page Screenshot [7])](assets/css/images/result-page-lose-large.png)
 
 ## Validator Testing
 
@@ -148,12 +148,12 @@ N.B. As difficult as it's been to wrap my head around JavaScript, I've thoroughl
 
         ~ Both errors have now been rectified.
 
-        ![W3 HTML Validator - clean record)](assets/images/w3-html-validation.png)
+        ![W3 HTML Validator - clean record)](assets/css/images/w3-html-validation.png)
 
 - ### CSS
    - No issues were found after passing the CSS code through [W3's Jigsaw Validator](https://jigsaw.w3.org/css-validator).
 
-   ![W3 CSS Validator - clean record)](assets/images/w3-css-validation.png)
+   ![W3 CSS Validator - clean record)](assets/css/images/w3-css-validation.png)
 
 - ### Unfixed Bugs
     - As far as I was able to observe, there were no outstanding bugs to be fixed.
@@ -182,13 +182,13 @@ As a result of following these steps, my website was deployed. It can be viewed 
 
 - Spencer's 'question and answer' array
 
-![Array screenshot](assets/images/question-and-answers-array.png)
+![Array screenshot](assets/css/images/question-and-answers-array.png)
 
     ~ featured in a simple quiz that Spencer developed for educational purposes
 
 - ChatGPT aided me in breaking down and understanding key JavaScript concepts
 
-![Array screenshot](assets/images/chatgpt-concept-breakdown.png)
+![Array screenshot](assets/css/images/chatgpt-concept-breakdown.png)
 
     ~ this is a prime example of how I used ChatGPT to enhance my learning experience
 
@@ -196,42 +196,42 @@ As a result of following these steps, my website was deployed. It can be viewed 
 
 - [Favicon.io](https://favicon.io/favicon-generator) was used to select the Favicon icon for the browser tab.
 
-    ![Favicon Icon - QZ Logo](assets/images/favicon-32x32.png)
+    ![Favicon Icon - QZ Logo](assets/css/images/favicon-32x32.png)
 
 - [Coolers](https://coolors.co) was used to generate a colour palette.
 
-    ![Colour Palette 1](assets/images/colour-palette-1.png)
-    ![Colour Palette 2](assets/images/colour-palette-2.png)
+    ![Colour Palette 1](assets/css/images/colour-palette-1.png)
+    ![Colour Palette 2](assets/css/images/colour-palette-2.png)
 
 - [Google Fonts](https://fonts.google.com) was used to generate font styles.
 
     - Nanum Gothic
 
-    ![Nanum Gothic](assets/images/nanum-gothic-font.png)
+    ![Nanum Gothic](assets/images/css/nanum-gothic-font.png)
     
     - Ubuntu
 
-    ![Ubuntu Font Style](assets/images/ubuntu-font.png)
+    ![Ubuntu Font Style](assets/css/images/ubuntu-font.png)
 
     - Leckerli One
 
-    ![Leckerli One Font Style](assets/images/leckerli-one-font.png)
+    ![Leckerli One Font Style](assets/css/images/leckerli-one-font.png)
 
     - Roboto
 
-    ![Roboto Font Style](assets/images/roboto-font.png)
+    ![Roboto Font Style](assets/css/images/roboto-font.png)
 
 - [Vecteezy](https://www.vecteezy.com) was used to find suitable videos.
 
     - Home page video
 
-    ![Swinging Light Bulbs](assets/videos/homepage-background-video.mp4) / [Link to video](https://www.vecteezy.com/video/1787130-two-classic-light-bulbs-glowing-and-swinging-in-darkness-in-4k)
+    ![Swinging Light Bulbs](assets/css/videos/homepage-background-video.mp4) / [Link to video](https://www.vecteezy.com/video/1787130-two-classic-light-bulbs-glowing-and-swinging-in-darkness-in-4k)
 
     - Result page videos
 
-    ![Shooting Star](assets/videos/result-background-win.mp4) / [Link to video](https://www.vecteezy.com/video/8808619-star-particle-effect)
+    ![Shooting Star](assets/css/videos/result-background-win.mp4) / [Link to video](https://www.vecteezy.com/video/8808619-star-particle-effect)
 
-    ![You Lose](assets/videos/result-background-lose.mp4) / [Link to video](https://www.vecteezy.com/video/3538961-you-lose-colorful-text-word-flicker-light-animation)
+    ![You Lose](assets/css/videos/result-background-lose.mp4) / [Link to video](https://www.vecteezy.com/video/3538961-you-lose-colorful-text-word-flicker-light-animation)
 
 - [HTML Color Codes](https://htmlcolorcodes.com) was used to find HEX and RGBA colour codes.
 
