@@ -18,7 +18,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 40% auto;
 }
 
 header #logo {
@@ -89,9 +89,9 @@ header #logo {
     background: linear-gradient(0deg, rgba(3, 0, 0, 0.5), rgba(210, 163, 55, 0.5), rgba(3, 0, 0, 0.5));
     opacity: 0.9;
     border-radius: 250px;
-    height: 500px;
-    width: 250px;
-    margin: 40px auto;
+    height: 450px;
+    width: 300px;
+    margin: auto;
 }
 
 #question-container {
@@ -100,18 +100,18 @@ header #logo {
     justify-content: center;
     padding: 20px;
     background-color: #030000;
-    height: 400px;
+    height: 340px;
     width: 200px;
     opacity: 0.5;
     border-radius: 110px;
 }
 
 #question-number {
-    padding-top: 5px;
+    padding-top: 10px;
     color: #C28347;
     text-align: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -128,12 +128,14 @@ header #logo {
     color: #C28347;
     font-weight: bold;
     list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #answers button {
-    height: 20px;
     width: 200px;
     margin: 5px 0;
+    padding: 3px;
     border-radius: 10px;
     background-color: #AA7039;
     box-shadow: 1px 1px 2px 2px #502616;
@@ -156,13 +158,14 @@ header #logo {
     color: #C28347;
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
     font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #running-tally {
     color: #C28347;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -170,7 +173,6 @@ header #logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
 }
 
 #btn-forward {
@@ -190,7 +192,7 @@ header #logo {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    height: 550px;
+    height: 500px;
     width: 250px;
     background-color: #660000;
     opacity: 0.4;
@@ -220,7 +222,16 @@ header #logo {
 }
 
 #score-text {
+    font-size: 20px;
     margin: 10px;
+}
+
+#score-message {
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 100px;
+    border-style: dashed;
 }
 
 .score-container button {
@@ -229,7 +240,7 @@ header #logo {
     margin: 15px;
     color: #C28347;
     text-shadow: #E31837 1px 0px 3px;
-    background: linear-gradient(0deg, rgba(132, 77, 41, 0.5), rgba(194, 131, 71, 0.5), rgba(132, 77, 41, 0.5));
+    background: black;
     border-radius: 12px;
     box-shadow: 1px 1px 1px 1px #844D29;
     font-weight: bold;
@@ -255,7 +266,6 @@ header #logo {
     }
 
     .welcome-text h3 {
-        height: 80px;
         width: 250px;
         font-size: 18px;
     }
@@ -263,8 +273,13 @@ header #logo {
     /* Quiz Questions */
     .quiz-container {
         height: 550px;
-        width: 80%;
-        margin: 20px auto 50px;
+        width: 95%;
+        margin: 50px auto 50px;
+    }
+
+    #question-number {
+        padding: 2%;
+        font-size: 130%;
     }
 
     #question-container {
@@ -274,6 +289,7 @@ header #logo {
     }
 
     #question {
+        padding: 1% 6%;
         font-size: 180%;
         margin: 0 40px;
     }
@@ -283,9 +299,9 @@ header #logo {
     }
 
     #answers button {
-        height: 20px;
         width: 400px;
         margin: 10px 0;
+        padding: 5px;
         font-size: 80%;
     }
 
@@ -294,11 +310,7 @@ header #logo {
     }
 
     #tally-text {
-        font-size: 120%;
-    }
-
-    #button-container {
-        padding: 5%;
+        font-size: 130%;
     }
 
     #btn-forward {
@@ -350,7 +362,6 @@ header #logo {
     }
 
     .welcome-text h3 {
-        height: 100px;
         width: 350px;
         margin-bottom: 1%;
         padding: 10px;
@@ -358,7 +369,6 @@ header #logo {
     }
 
     #btn-go-to-quiz {
-        height: 80px;
         width: 100px;
         padding: 5px;
         font-size: 15px;
@@ -373,7 +383,7 @@ header #logo {
 
     #question-container {
         height: 200%;
-        width: 95%;
+        width: 90%;
     }
 
     #question {
@@ -381,7 +391,7 @@ header #logo {
     }
 
     #question-number {
-        font-size: 150%;
+        font-size: 170%;
     }
 
     .answer {
@@ -389,7 +399,6 @@ header #logo {
     }
 
     #answers button {
-        height: 30px;
         width: 600px;
         margin: 10px 0;
         font-size: 80%;
@@ -400,7 +409,7 @@ header #logo {
     }
 
     #tally-text {
-        font-size: 140%;
+        font-size: 170%;
     }
 
     #button-container {
@@ -454,11 +463,9 @@ header #logo {
     
     .welcome-text h1 {
         font-size: 150px;
-        margin-top: 200px;
     }
 
     .welcome-text h3 {
-        height: 90px;
         width: 800px;
         font-size: 40px;
         font-weight: bold;
@@ -485,15 +492,16 @@ header #logo {
 
     #question-container {
         height: 120%;
+        width: 90%;
         border-radius: 550px;
     }
 
     #question {
-        font-size: 450%;
+        font-size: 500%;
     }
 
     #question-number {
-        font-size: 250%;
+        font-size: 300%;
     }
 
     .answer {
@@ -501,10 +509,9 @@ header #logo {
     }
 
     #answers button {
-        height: 45px;
         width: 900px;
-        margin: 10px 0;
-        font-size: 80%;
+        margin: 20px;
+        font-size: 90%;
         box-shadow: 1px 1px 3px 3px #502616;
     }
 
@@ -513,7 +520,7 @@ header #logo {
     }
 
     #tally-text {
-        font-size: 225%;
+        font-size: 300%;
     }
     
     #running-tally {
@@ -524,12 +531,12 @@ header #logo {
         padding: 1%;
     }
 
-    #btn-backward, #btn-forward {
+    #btn-forward {
         width: 10%;
-        font-size: 180%;
+        font-size: 200%;
         box-shadow: 1px 1px 4px 2px #AA7039;
     }
-    
+
     /* Result Page */
     .result-container {
         height: 1480px;
@@ -544,7 +551,7 @@ header #logo {
      }
      
      .result-container h1 {
-        font-size: 120px;
+        font-size: 140px;
         margin-bottom: 10px;
      }
 
@@ -562,13 +569,19 @@ header #logo {
 
      #score-message {
         font-size: 40px;
+        font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #9b111e;
+        border-radius: 1000px;
+        border-style: dashed;
+        padding: 30px;
+        margin: 20px 200px;
      }
 
      .score-container button {
-        height: 80px;
-        width: 180px;
+        height: 100px;
+        width: 230px;
         margin: 50px;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: bold;
         text-shadow: #E31837 5px 0px 20px;
      }
