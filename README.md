@@ -184,19 +184,19 @@ As a result of following these steps, my website was deployed. It can be viewed 
 
 ![Array screenshot](assets/images/question-and-answers-array.png)
 
-    ~ featured in a simple quiz that Spencer developed for educational purposes
+    --> featured in a simple quiz that Spencer developed for educational purposes
 
 - ChatGPT aided me in breaking down and understanding key JavaScript concepts
 
 ![Array screenshot](assets/images/chatgpt-concept-breakdown.png)
 
-    ~ this is a prime example of how I used ChatGPT to enhance my learning experience
+    --> this is a prime example of how I used ChatGPT to enhance my learning experience
 
 ### Media
 
 - [Favicon.io](https://favicon.io/favicon-generator) was used to select the Favicon icon for the browser tab.
 
-    ![Favicon Icon - QZ Logo](assets/images/favicon-32x32.png)
+    ![Favicon Icon - QZ Logo](assets/images/favicon-192x192.png)
 
 - [Coolers](https://coolors.co) was used to generate a colour palette.
 
@@ -225,13 +225,16 @@ As a result of following these steps, my website was deployed. It can be viewed 
 
     - Home page video
 
-    ![Swinging Light Bulbs](assets/images/lightbulb-video.png) / [Link to video](https://www.vecteezy.com/video/1787130-two-classic-light-bulbs-glowing-and-swinging-in-darkness-in-4k)
+    ![Swinging Light Bulbs](assets/images/lightbulb-video.png)
+        --> [Link to video](https://www.vecteezy.com/video/1787130-two-classic-light-bulbs-glowing-and-swinging-in-darkness-in-4k)
 
     - Result page videos
 
-    ![Shooting Star](assets/images/star-video.png) / [Link to video](https://www.vecteezy.com/video/8808619-star-particle-effect)
+    ![Shooting Star](assets/images/star-video.png)
+        --> [Link to video](https://www.vecteezy.com/video/8808619-star-particle-effect)
 
-    ![You Lose](assets/images/you-lose-video.png) / [Link to video](https://www.vecteezy.com/video/3538961-you-lose-colorful-text-word-flicker-light-animation)
+    ![You Lose](assets/images/you-lose-video.png)
+        --> [Link to video](https://www.vecteezy.com/video/3538961-you-lose-colorful-text-word-flicker-light-animation)
 
 - [HTML Color Codes](https://htmlcolorcodes.com) was used to find HEX and RGBA colour codes.
 
