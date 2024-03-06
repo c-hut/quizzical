@@ -225,13 +225,13 @@ As a result of following these steps, my website was deployed. It can be viewed 
 
     - Home page video
 
-    ![Swinging Light Bulbs](assets/videos/lightbulb-video.png) / [Link to video](https://www.vecteezy.com/video/1787130-two-classic-light-bulbs-glowing-and-swinging-in-darkness-in-4k)
+    ![Swinging Light Bulbs](assets/images/lightbulb-video.png) / [Link to video](https://www.vecteezy.com/video/1787130-two-classic-light-bulbs-glowing-and-swinging-in-darkness-in-4k)
 
     - Result page videos
 
-    ![Shooting Star](assets/videos/star-video.png) / [Link to video](https://www.vecteezy.com/video/8808619-star-particle-effect)
+    ![Shooting Star](assets/images/star-video.png) / [Link to video](https://www.vecteezy.com/video/8808619-star-particle-effect)
 
-    ![You Lose](assets/videos/you-lose-video.png) / [Link to video](https://www.vecteezy.com/video/3538961-you-lose-colorful-text-word-flicker-light-animation)
+    ![You Lose](assets/images/you-lose-video.png) / [Link to video](https://www.vecteezy.com/video/3538961-you-lose-colorful-text-word-flicker-light-animation)
 
 - [HTML Color Codes](https://htmlcolorcodes.com) was used to find HEX and RGBA colour codes.
 
