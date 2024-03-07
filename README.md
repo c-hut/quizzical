@@ -196,7 +196,7 @@ As a result of following these steps, my website was deployed. It can be viewed 
 
 - [Favicon.io](https://favicon.io/favicon-generator) was used to select the Favicon icon for the browser tab.
 
-    ![Favicon Icon - QZ Logo](assets/images/favicon-192x192.png)
+    ![Favicon Icon - QZ Logo](assets/favicon/favicon-192x192.png)
 
 - [Coolers](https://coolors.co) was used to generate a colour palette.
 
